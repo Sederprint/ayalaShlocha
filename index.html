@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foundation Name</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="logo-container">
+      <img src="imgs/logo.png" alt="Foundation Logo" class="logo" />
+    </div>
+    <header class="header">
+      <nav>
+        <ul>
+          <li><a href="#about">אודות</a></li>
+          <li><a href="#donate">תרמו לנו</a></li>
+          <li><a href="#projects">פרוייקטים</a></li>
+          <li><a href="#contact">יצירת קשר</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="hero">
+      <div class="video-container">
+        <video id="videoPlayer" autoplay muted loop class="background-video">
+          <source src="video/vidMain.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+      <div class="video-thumbnails">
+        <div id="videoTitleContainer"><h3>בחר וידאו לצפייה</h3></div>
+        <div id="videoThumbNailsImages">
+          <img
+            src="imgs/main.jpg"
+            alt="Main Video"
+            onclick="changeVideo('vidMain.mp4')"
+          />
+
+          <img
+            src="imgs/vid1.jpg"
+            alt="Video 1"
+            onclick="changeVideo('vid1.mp4')"
+          />
+          <img
+            src="imgs/vid2.jpg"
+            alt="Video 2"
+            onclick="changeVideo('vid2.mp4')"
+          />
+          <img
+            src="imgs/vid3.jpg"
+            alt="Video 3"
+            onclick="changeVideo('vid3.mp4')"
+          />
+          <img
+            src="imgs/vid4.jpg"
+            alt="Video 4"
+            onclick="changeVideo('vid4.mp4')"
+          />
+          <img
+            src="imgs/vid5.jpg"
+            alt="Video 5"
+            onclick="changeVideo('vid5.mp4')"
+          />
+          <img
+            src="imgs/vid6.jpg"
+            alt="Video 6"
+            onclick="changeVideo('vid6.mp4')"
+          />
+          <img
+            src="imgs/vid7.jpg"
+            alt="Video 7"
+            onclick="changeVideo('vid7.mp4')"
+          />
+        </div>
+      </div>
+
+      <div class="video-controls">
+        <div class="video-icon" id="playPauseBtn" title="השהה/המשך">
+          <img src="imgs/pause.png" alt="Play/Pause" />
+        </div>
+        <div class="video-icon" id="soundBtn" title="הדלק/כבה קול">
+          <img src="imgs/mute.png" alt="Sound On/Off" />
+        </div>
+      </div>
+
+      <div class="call-to-action">
+        <button onclick="location.href='donate.html'">תרומה עכשיו</button>
+        <button onclick="location.href='about.html'">קרא עוד</button>
+      </div>
+    </div>
+
+    <section id="about">
+      <h2>על העמותה</h2>
+      <p>
+        ”אילה שלוחה“ הינו ארגון שנוסד לסייע למשפחות במצוקה כלכלית על בסיס
+        מתנדבים ללא מטרות רווח, א- פוליטי א-מפלגתי לכל המגזרים ללא דופי, ארגון
+        ”אילה שלוחה“ פועל לניווט החברה בשכונה לערבות הדדית, נתינה והובלת שינוי
+        בסדר העדיפות. ( הארגון רשום ברשם העמותות כנדרש (ע.ר. 580712644 הארגון
+        מקפיד על שקיפות מלאה בכל העניינים ומנוהל כספית ע“י משרד רואה חשבון דוד
+        בן משה, ומלווה משפטית ע“י משרד ”בן יוסף דרין“ ע“י עו“ד איתי דרין הי“ו
+        ובגיבוי מלא ובברכת רבני השכונה: הרב ליאור אבישר שליט“א. והרב אלעד נאמן
+        שליט“א. ובגיבוי יו“ר מינהל קהילתי הר חומה מר שלמה גולברי הי“ו. , מחסן
+        העמותה נמצא בשכונת הר חומה ירושלים, מנהל המחסן ואחראי לוגיסטיקה- יוחאי
+        בוטח: 050-8656570 הכנת הסלים מתבצעת ע“י בני נוער בשכונה בהתנדבות, צוות
+        הנהגים מתנדבים ומובילים את המוצרים לבית המשפחות, ”אילה שלוחה“ מקפידים על
+        טריות ואיכות המוצרים וכשרותם, סטרליות ועמידה בכל התקנים של משרד הבריאות.
+      </p>
+    </section>
+
+    <section id="impact" class="section">
+      <h2>עזרו לנו לעזור לעוד משפחות</h2>
+      <div class="statistics">
+        <div>
+          <strong id="families-helped">0</strong><br />משפחות שקיבלו עזרה
+        </div>
+        <div><strong id="packages-delivered">0</strong><br />חבילות שנמסרו</div>
+        <div><strong id="funds-raised">0</strong><br />כספים שהושגו</div>
+      </div>
+    </section>
+
+    <section id="testimonials">
+      <h2>Stories From Beneficiaries</h2>
+      <p>
+        "Thanks to the foundation, we were able to celebrate the holidays with a
+        full meal on our table." - Family Name
+      </p>
+    </section>
+
+    <footer>
+      <p>
+        Contact us at
+        <a href="mailto:info@foundation.com">info@foundation.com</a>. Follow us
+        on <a href="#">social media</a>.
+      </p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
